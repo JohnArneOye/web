@@ -1,0 +1,41 @@
+body{
+  background: url(../img/companion_cube.jpg);
+}
+
+
+.under-dev{
+  background: -webkit-linear-gradient(#E3A5D9, #DAC2E3));
+  background: -o-linear-gradient(#E3A5D9, #DAC2E3);
+  background: linear-gradient(#E3A5D9, #DAC2E3);
+  color:white;
+  width:30vw;
+  height:20vh;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 20vh;
+  font: serif;
+  font-size: 32px;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom:55vh;
+}
+
+/*
+http://adobe.ly/1ap1vBD
+*/
+
+.footer{
+  width = 100%;
+  text-align: center;
+  background-color: #E3A5D9;
+  color: rgb(0,47,47);
+  font: serif 16px;
+  height: 20vh;
+  padding:20px;
+  margin:0;
+}
+
+.footer ul li{
+  display:inline;
+  margin:50px;
+}
