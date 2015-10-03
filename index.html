@@ -12,8 +12,14 @@
 <body>
   <div class="contain-to-grid fixed">
     <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">johnarne.no</a></h1>
+        </li>
+      </ul>
       <section class="top-bar-section">
           <ul class="left">
+            <li class="divider"></li>  
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">CV</a></li>
@@ -23,12 +29,12 @@
           <ul class="right">
             <li class="has-form">
               <div class="row collapse">
-                <div class="large-8 small-9 columns">
-                  <input type="text" placeholder="Powered by John Arne">
-                </div>
-                <div class="large-4 small-3 columns">
+                <!-- <div class="large-8 small-9 columns"> -->
+                  <input type="text" placeholder="Search by John Arne">
+                <!-- </div> -->
+                <!-- <div class="large-4 small-3 columns">
                   <a href="#" class="alert button expand">Search</a>
-                </div>
+                </div> -->
               </div>
             </li>
           </ul>
@@ -73,8 +79,11 @@
       <li>Acando AS</li>
     </ul>
   </div>
+
+  <!-- JS PLUGINS -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/foundation.min.js"></script>
+  <script src="js/foundation/foundation.topbar.js"></script>
   <script>
     $(document).foundation();
 </script>

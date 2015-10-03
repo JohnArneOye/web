@@ -1,5 +1,7 @@
 body{
   background: url(../img/companion_cube.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -19,7 +21,6 @@ body{
   margin: auto;
   margin-bottom:55vh;
 }
-
 /*
 http://adobe.ly/1ap1vBD
 */
