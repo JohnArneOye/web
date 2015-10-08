@@ -2,28 +2,9 @@ body{
   background: url(../img/companion_cube.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  transition: all .2s ease;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform-origin: center;
-  -moz-transform-origin: center;
-  -o-transform-origin: center;
-  transform-origin: center;
 }
 
-body:hover{
-  -webkit-transform: perspective(800px) scale(1.025);
-  -moz-transform: perspective(800px) scale(1.025);
-  -ms-transform: perspective(800px) scale(1.025);
-  -o-transform: perspective(800px) scale(1.025);
-  transform: perspective(800px) rotateY(180deg) scale(1.025);
-}
+
 
 .panel{
   overflow: hidden;
@@ -46,15 +27,34 @@ body:hover{
   height: 200px;
 }
 .card:hover {
-  -webkit-transform: perspective(800px) scale(1.025);
-  -moz-transform: perspective(800px) scale(1.025);
-  -ms-transform: perspective(800px) scale(1.025);
-  -o-transform: perspective(800px) scale(1.025);
-  transform: perspective(800px) rotateY(180deg) scale(1.025);
+  -webkit-transform: perspective(1000px) rotateY(8deg) scale(1.025);
+  -moz-transform: perspective(1000px) rotateY(8deg) scale(1.025);
+  -ms-transform: perspective(1000px) rotateY(8deg) scale(1.025);
+  -o-transform: perspective(1000px) rotateY(8deg) scale(1.025);
+  transform: perspective(1000px) rotateY(8deg) scale(1.025);
+  animation:
+
 }
 .panel h4 {
   font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.panel:before {
+  content:'';
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  background:linear-gradient(transparent 150px, white);
+}
+
+header{
+  background: linear-gradient(white, #333333);
+  height: 50vh;
+  width: 100%;
+  text-align: center;
+}
+
 
 /*.rotate3d{
   -webkit-perspective: 800px;
