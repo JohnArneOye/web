@@ -20,9 +20,14 @@
         <li class="name">
           <h1><a href="#">johnarne.no</a></h1>
         </li>
+        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon">
+          <a href="#"><span>Menu</span></a>
+        </li>
       </ul>
+
       <section class="top-bar-section">
-          <ul class="center-buttons">
+          <ul class="left">
             <li class="divider"></li>
             <li class="active"><a href="#">Home</a></li>
             <li class="divider"></li>
@@ -37,7 +42,6 @@
             <li><a href="about.html">About</a></li>
             <li class="divider"></li>
           </ul>
-          <a href="google.no" class="stylish">Press here</a>
           <ul class="right">
             <li class="has-form">
               <div class="row collapse">
@@ -53,34 +57,54 @@
       </section>
     </nav>
   </div>
-
+  <!-- NAVBAR END -->
 <div class="main" ng-controller="MainController">
   <div class="row">
     <div class="small-12 large-12 columns">
       <div class="panel">
-        <h4>{{ title }}</h4>
+        <h1>{{ title }}</h1>
         <p>Welcome to this interactive awesome experience of a lifetime.</p>
           <br>
           <a href="#" class="secondary button">Press here</a>
       </div>
     </div>
-      <div class="small-6 large-6 columns">
-        <div class="panel">
-          This is a card
+        <div class="small-12 large-6 columns">
+          <div class="panel card">
+            <div class="faces">
+              <div class="front"><h4>Header in card</h4><br></h4></H4><p>This is a card <br> And I say to you all the people of the world: <br> live in peach with the internet, the internet is your friend. <br> Do not resist, it is futile.</p></div>
+              <div class="back"><p>This is the backside.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="small-12 large-6 columns" >
+          <div class="panel card">
+            <p>
+              This another card <br> This is some text that i write just to make it look like it has something here <br> Yes, that's what it is.
+            </p>
+          </div>
+        </div>
+        <div class="small-12 large-6 columns">
+        <div class="panel card">
+          <p>
+            This is a card <br> I'm writing some stuff here don't mind what it says it's just <br> nonsense.
+          </p>
         </div>
       </div>
-      <div class="small-6 large-6 columns">
-        <div class="panel">
-          This another card
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
+          <p>
+            This another carddadwdawdd <br> dawdadadwwada lorem ipsum lala
+            <br> Stuff
+          </p>
         </div>
       </div>
-      <div class="small-12 large-12 columns">
-        <div class="panel blackpanel">
-          This is a blackpanel
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
+          <p>This is a blackpanel</p>
         </div>
       </div>
-      <div class="small-6 large-6 columns">
-        <div class="panel">
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
           <p>Is this weird?</p>
           <p>I think it kinda looks a bit weird <br> What is with the margins
           on these things? <br> I should try to make the margins more similiar.
@@ -88,26 +112,26 @@
         <p>Writing more here</p>
         </div>
       </div>
-      <div class="small-6 large-6 columns">
-        <div class="panel">
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
           <p>With this one?</p>
           <p>What if I have more text? What happens to the oterh one<br> Does it also go down? Will it look better? <br> I don't know before I see it!</p>
         </div>
       </div>
-      <div class="small-12 large-12 columns">
-        <div class="panel">
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
           Aaand more
         </div>
       </div>
-      <div class="small-12 large-12 columns">
-        <div class="profile-card">
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
           <p>
             Are these better?
           </p>
         </div>
       </div>
-      <div class="small-12 large-12 columns">
-        <div class="profile-card">
+      <div class="small-12 large-6 columns">
+        <div class="panel card">
           <p>
             Are these better?
           </p>
@@ -123,7 +147,7 @@
         <div class="row">
           <div class="medium-9 medium-push-3 columns">
             <label>
-              <label for="email" class="contact">Contact</label>
+              <label for="email" class="contact">Conta|ct</label>
               <input type="email" id="email" value="johnarneoye@gmail.com"/>
             </label>
           </div>

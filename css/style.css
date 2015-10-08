@@ -2,30 +2,97 @@ body{
   background: url(../img/companion_cube.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
 }
 
-.under-dev{
-  background: -webkit-linear-gradient(#E3A5D9, #DAC2E3));
-  background: -o-linear-gradient(#E3A5D9, #DAC2E3);
-  background: linear-gradient(#E3A5D9, #DAC2E3);
-  color:white;
-  width:30vw;
-  height:20vh;
-  text-align: center;
-  padding-top: 10vh;
-  padding-bottom: 20vh;
-  font: serif;
-  font-size: 32px;
-  font-weight: bold;
-  margin: auto;
-  margin-bottom:55vh;
+body:hover{
+  -webkit-transform: perspective(800px) scale(1.025);
+  -moz-transform: perspective(800px) scale(1.025);
+  -ms-transform: perspective(800px) scale(1.025);
+  -o-transform: perspective(800px) scale(1.025);
+  transform: perspective(800px) rotateY(180deg) scale(1.025);
 }
 
 .panel{
-  border-radius: 5px;
+  overflow: hidden;
+
+}
+.card{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+  height: 200px;
+}
+.card:hover {
+  -webkit-transform: perspective(800px) scale(1.025);
+  -moz-transform: perspective(800px) scale(1.025);
+  -ms-transform: perspective(800px) scale(1.025);
+  -o-transform: perspective(800px) scale(1.025);
+  transform: perspective(800px) rotateY(180deg) scale(1.025);
+}
+.panel h4 {
+  font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/*.rotate3d{
+  -webkit-perspective: 800px;
+  perspective: 800px;
+  overflow: visible;
+}
+.faces{
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.faces div{
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom:0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+rotate3dY .back{
+  transform: rotateY(180deg);
+}
+.rotate3dY:hover .faces:hover{
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}*/
+
 .blackpanel{
+  background-color: #333333;
+  color: #8C91A7;
+  height: 15vw;
+  overflow: hidden;
+  border: 0px;
+}
+.blackpanel p{
+  color: #8C91A7;
+
+}
+.blackpanel:hover{
   background-color: black;
 }
 .bump {
