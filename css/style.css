@@ -1,14 +1,19 @@
 body{
-  background: url(../img/companion_cube.jpg);
+  /*background: url(../img/companion_cube.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  background-color: white;
 }
 
+.top-bar {
+overflow: hidden;
+position: relative;
+background: #333333;
+margin-bottom: 0;
 
-
-.panel{
-  overflow: hidden;
-
+}
+.selected{
+  /* REMOVE ANIMATIONS? */
 }
 .card{
   -webkit-backface-visibility: hidden;
@@ -25,20 +30,31 @@ body{
   -o-transform-origin: center;
   transform-origin: center;
   height: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-image: linear-gradient(to bottom, transparent, black);
 }
+.card span{
+  text-align: right;
+  color: #616161;
+  float:right;
+  position: relative;
+  top: 155px;
+  left: 5px;
+}
+
 .card:hover {
-  -webkit-transform: perspective(1000px) rotateY(8deg) scale(1.025);
-  -moz-transform: perspective(1000px) rotateY(8deg) scale(1.025);
-  -ms-transform: perspective(1000px) rotateY(8deg) scale(1.025);
-  -o-transform: perspective(1000px) rotateY(8deg) scale(1.025);
-  transform: perspective(1000px) rotateY(8deg) scale(1.025);
-  animation:
+  -webkit-transform: perspective(2000px) rotateY(8deg) scale(1.025);
+  -moz-transform: perspective(2000px) rotateY(8deg) scale(1.025);
+  -ms-transform: perspective(2000px) rotateY(8deg) scale(1.025);
+  -o-transform: perspective(2000px) rotateY(8deg) scale(1.025);
+  transform: perspective(2000px) rotateY(8deg) scale(1.025);
 
 }
 .panel h4 {
   font-family: "Proxima Nova","proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.panel:before {
+/*.panel:before {
   content:'';
   width:100%;
   height:100%;
@@ -46,7 +62,7 @@ body{
   left:0;
   top:0;
   background:linear-gradient(transparent 150px, white);
-}
+}*/
 
 header{
   background: linear-gradient(white, #333333);
@@ -104,7 +120,7 @@ rotate3dY .back{
 .profile-card {
   padding: 15px;
   border-radius: 5px;
-  background: #333333;
+  background-color: #333333;
   overflow: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
