@@ -44,11 +44,11 @@ margin-bottom: 0;
 }
 
 .card:hover {
-  -webkit-transform: perspective(2000px) rotateY(8deg) scale(1.025);
-  -moz-transform: perspective(2000px) rotateY(8deg) scale(1.025);
-  -ms-transform: perspective(2000px) rotateY(8deg) scale(1.025);
-  -o-transform: perspective(2000px) rotateY(8deg) scale(1.025);
-  transform: perspective(2000px) rotateY(8deg) scale(1.025);
+  -webkit-transform: perspective(3000px) rotateY(8deg) scale(1.025);
+  -moz-transform: perspective(3000px) rotateY(8deg) scale(1.025);
+  -ms-transform: perspective(3000px) rotateY(8deg) scale(1.025);
+  -o-transform: perspective(3000px) rotateY(8deg) scale(1.025);
+  transform: perspective(3000px) rotateY(8deg) scale(1.025);
 
 }
 .panel h4 {
